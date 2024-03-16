@@ -1,0 +1,40 @@
+*{
+	padding: 5px;
+	margin: 0px;
+	font-size: 20px;
+	font-family: sans-serif;
+	background-color: #A16B56;
+}
+.heading{
+	font-weight: bolder;
+	font-family: Aerial Black;
+	font-size: 50px;
+	color: #E2D7A7;
+}
+
+#text{
+	background-color:#DEC584;
+	color: #709F9D;
+	font-size: larger;
+	font-family: "Mochiy Pop P One", sans-serif;
+}
+.textboxform label{
+	color: #709F9D ;
+	font-weight: bolder;
+	font-family: "Mochiy Pop P One", sans-serif;
+	font-size: 30px;
+}
+.textboxform button{
+	color: white;
+	background-color: #709F9D ;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: "Mochiy Pop P One", sans-serif;
+}
+
+#textinfo{
+	color: #E2D7A7 ;
+	font-family: "Mochiy Pop P One", sans-serif;
+}
