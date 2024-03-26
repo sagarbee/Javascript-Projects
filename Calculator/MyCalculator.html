@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.container{
+				position: fixed;
+				top:0px;
+				left: 0;
+				height: 100vh;
+				width: 100%;
+				background-color: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 10px;
+			}
+			.cal{
+				width: 300px;
+				height: 430px;
+				background-color: chocolate;
+				border-radius: 30px;
+				padding: 20px;
+				border-radius: 25px;
+				border-style: solid;
+				border-width: 7px;
+			}
+			input[type="button"]{
+				height: 60px;
+				width: 60px;
+				margin: 5px;
+				border-radius: 10px;
+				background-color: black;
+				color: lightgrey;
+				font-family: sans-serif;
+				font-size: 20px;
+				border: none;
+				cursor: pointer;
+				text-align: center;
+				//border-style: solid;
+				border-radius: 30px;
+				/*border-style: ridge;*/
+				border-color: black;
+				border-style: solid;
+				/*font color: white;*/
+				/*border-style: solid;
+				border-color: white;*/
+				
+
+
+			}
+			
+			.output{
+				width: 90%;
+				height: 50px;
+				margin-bottom: 30px;
+				color: white;
+				font-size: 30px;
+				text-align: right;
+			}
+			#zero{
+				width: 130px;
+			}
+			/*.division{
+				background-color: orange;
+			}*/
+
+			/*.operator
+			{
+				background-color: orange;
+			}*/
+
+			/*.op{
+				background-color: orange;
+				color: orange;
+			}
+*/
+			.button{
+				outline-color: black;
+			}
+			.output{
+				background-color: lightgrey;
+				/*background-color: black;*/
+				border-style: solid;
+				border-color: black;
+				border-width: 3px;
+				color: black;
+			}
+	</style>
+	<title>My Calculator</title>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="cal" align="center">
+		<form>
+				<div>
+				<input type="text" name="op" class="output" disabled>
+			</div>
+			<div>
+				<input type="button" name="allclear" value="AC" onclick="op.value =''">
+				<input type="button" name="clear" value="C" onclick="op.value = (op.value).slice(0,-1)">
+				<input type="button" name="clear" value="%" onclick="" class="operator">
+				<input type="button" name="clear" value="/" onclick="" class="op">
+			</div>
+			<div>
+				<input type="button" name="number" value="7" onclick="op.value+='7' " >
+				<input type="button" name="number" value="8" onclick=" op.value+='8'" class="num">
+				<input type="button" name="number" value="9" onclick=" op.value+='9'" class="num">
+
+				<input type="button" name="number" value="X" onclick=" op.value+='*'" class="operator">
+				
+			</div>
+			<div>
+				<input type="button" name="number" value="4" onclick=" op.value+='4'" class="num">
+				<input type="button" name="number" value="5" onclick=" op.value+='5'" class="num">
+				<input type="button" name="number" value="6" onclick=" op.value+='6'" class="num">
+
+				<input type="button" name="number" value="-" onclick=" op.value+='-'" class="op">
+				
+			</div>
+			<div>
+				<input type="button" name="number" value="1" onclick=" op.value+='1'" class="num">
+				<input type="button" name="number" value="2" onclick=" op.value+='2'" class="num">
+				<input type="button" name="number" value="3" onclick=" op.value+='3'" class="num">
+
+				<input type="button" name="number" value="+" onclick=" op.value+='+'" class="op">
+				
+			</div>
+			<div>
+				<input type="button" name="number" value="0" onclick=" op.value+='0'" class="num " id="zero">
+				<input type="button" name="number" value="." onclick=" op.value+='.'" class="num">
+
+				<input type="button" name="number" value="=" onclick=" op.value=eval(op.value)" class="op">
+				
+			</div>
+			</form>
+		</div>
+	</div>
+
+
+</body>
+</html>
